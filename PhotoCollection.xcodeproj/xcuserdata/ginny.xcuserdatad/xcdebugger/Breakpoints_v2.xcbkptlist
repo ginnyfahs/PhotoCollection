@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoCollection/RecipeCollectionViewController.m"
-            timestampString = "570589384.905766"
+            timestampString = "570593749.709527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,27 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoCollection/RecipeCollectionViewController.m"
-            timestampString = "570589384.905952"
+            timestampString = "570593749.710102"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoCollection/RecipeCollectionViewController.m"
-            timestampString = "570589384.9060889"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>

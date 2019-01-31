@@ -24,8 +24,8 @@
 static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
-    NSLog(@"Hitting RecipeCollectionViewController viewDidLoad");
     [super viewDidLoad];
+    self.collectionView.backgroundColor = [UIColor blackColor];
     
     // Initialize recipe image array
     recipeImages = [NSArray arrayWithObjects:@"angry_birds_cake.jpg", @"creme_brelee.jpg", @"egg_benedict.jpg", @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg", @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg", @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg", @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg", @"white_chocolate_donut.jpg", nil];
@@ -35,10 +35,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Register cell classes
     [self.collectionView registerClass:[RecipeCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-//    self.collectionView.collectionViewLayout = flowLayout;
-//    [self.collectionView layoutSubviews];
-//    [self.collectionView layoutIfNeeded];
-    NSLog(@"recipeImages, %@", recipeImages);
     // Do any additional setup after loading the view.
 }
 
@@ -61,21 +57,11 @@ static NSString * const reuseIdentifier = @"Cell";
 
 // where is this even getting called?
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"inside collectionview");
 
     RecipeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-//    cell.backgroundColor = [UIColor redColor];
-    NSLog(@"cell %@", cell);
-
-    // think this line is the issue
-    UIImageView *recipeImageView = cell.recipeImageView;
-    NSLog(@"recipeImageView %@", recipeImageView);
 
     cell.recipeImageView.image =  [UIImage imageNamed:[recipeImages objectAtIndex:indexPath.row]];
-//    recipeImageView.image = [UIImage imageNamed:@"angry_birds_cake"];
-    // Configure the cell
-    NSLog(@"cell %@", cell);
+    cell.frameView.image = [UIImage imageNamed:@"photo-frame.png"];
 
     return cell;
 }

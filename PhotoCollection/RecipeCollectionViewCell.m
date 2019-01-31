@@ -15,8 +15,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         _recipeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-//        self.contentView.backgroundColor = [UIColor yellowColor];
         [self.contentView addSubview: _recipeImageView];
+        
+        _frameView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo-frame.png"]];
+        [self.contentView addSubview: _frameView];
+        
     }
 
     return self;
